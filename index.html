@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="logo">Portfolio</span>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1><span class="typewrite" data-words='["3D Artist","Low Poly Artist","Mid Poly Artist"]'></span></h1>
+      <p>Modeling, Basic Texturing, Rendering</p>
+      <a href="#gallery" class="btn">View work</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Hi! I'm a 3D artist specializing in low poly and mid poly styles. I create characters, props, and environment assets with a stylized touch.</p>
+          <p>1 year of experience in the industry. 15 successfully completed orders. I work primarily in Blender.</p>
+          <div class="skills">
+            <span>Blender</span>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat"><span class="num" data-target="1">0</span><span class="label">Year of experience</span></div>
+          <div class="stat"><span class="num" data-target="15">0</span><span class="label">Completed orders</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="container">
+      <h2 class="section-title reveal">My work</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" data-tilt><img src="C:\Users\Сергей\Desktop\portfolio\images\1fdfd.png" alt="Render 1"><div class="overlay"><span>View</span></div></div>
+        <div class="gallery-item reveal" data-tilt><img src="C:\Users\Сергей\Desktop\portfolio\images\dfsf3.png" alt="Render 2"><div class="overlay"><span>View</span></div></div>
+        <div class="gallery-item reveal" data-tilt><img src="C:\Users\Сергей\Desktop\portfolio\images\dsfsd34.png" alt="Render 3"><div class="overlay"><span>View</span></div></div>
+        <div class="gallery-item reveal" data-tilt><img src="C:\Users\Сергей\Desktop\portfolio\images\fgfdg6.png" alt="Render 4"><div class="overlay"><span>View</span></div></div>
+        <div class="gallery-item reveal" data-tilt><img src="C:\Users\Сергей\Desktop\portfolio\images\sfsdf5.png" alt="Render 5"><div class="overlay"><span>View</span></div></div>
+        <div class="gallery-item reveal" data-tilt><img src="C:\Users\Сергей\Desktop\portfolio\images\vcbhfd2.png" alt="Render 6"><div class="overlay"><span>View</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Contact</h2>
+      <div class="contact-content reveal">
+        <p>Feel free to reach out:</p>
+        <div class="contact-links">
+          <a href="https://discord.com/users/dennismcdaniels1" target="_blank">Discord: dennismcdaniels1</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Portfolio. All rights reserved.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="full">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
